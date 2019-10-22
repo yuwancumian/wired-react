@@ -1,0 +1,29 @@
+{
+  "name": "wired-react",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./index.js",
+  "preferGlobal": "true",
+  "bin": {
+    "wired-react": "./index.js"
+   },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yuwancumian/wired-react.git"
+  },
+  "keywords": [
+    "keyword1",
+    "keyword2"
+  ],
+  "author": "yuwancumian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yuwancumian/wired-react/issues"
+  },
+  "homepage": "https://github.com/yuwancumian/wired-react",
+  "dependencies": {
+  }
+}
