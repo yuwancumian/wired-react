@@ -6,9 +6,12 @@
   "preferGlobal": "true",
   "bin": {
     "wired-react": "./index.js"
-   },
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:css": "gulp build",
+    "build:lib": "cross-env OUTPUT_MODULE=commonjs babel packages -d lib --ignore **/__tests__",
+    "build:dist": "microbundle --jsx React.createElement --external react",
+    "build:es": "microbundle -f es -o es"
   },
   "repository": {
     "type": "git",
@@ -24,6 +27,19 @@
     "url": "https://github.com/yuwancumian/wired-react/issues"
   },
   "homepage": "https://github.com/yuwancumian/wired-react",
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "cross-env": "^6.0.3",
+    "gulp": "^4.0.2",
+    "gulp-less": "^4.0.1",
+    "lerna": "^3.13.3",
+    "microbundle": "^0.11.0"
+  },
   "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
   }
 }
