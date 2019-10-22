@@ -2,8 +2,8 @@
   "name": "wired-react",
   "version": "0.0.1",
   "description": "",
-  "main": "./index.js",
-  "preferGlobal": "true",
+  "main": "lib/index.js",
+  "preferGlobal": true,
   "bin": {
     "wired-react": "./index.js"
   },
